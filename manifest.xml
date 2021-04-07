@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
+  <Id>631b8e29-2ffc-478e-a22f-fb5af2bdc624</Id>
+  <Version>2.0.0.0</Version>
+  <ProviderName>vnu</ProviderName>
+  <DefaultLocale>vi-VN</DefaultLocale>
+  <DisplayName DefaultValue="Lawtech Add-in" />
+  <Description DefaultValue="Lawtech tools to get started." />
+  <IconUrl DefaultValue="https://lawtechaddin.simidoc.vn/assets/icon-32.png" />
+  <HighResolutionIconUrl DefaultValue="https://lawtechaddin.simidoc.vn/assets/icon-80.png"/>
+  <SupportUrl DefaultValue="https://lawtechaddin.simidoc.vn.user_manual.html"/>
+  <AppDomains>
+    <AppDomain>https://lawtechaddin.simidoc.vn</AppDomain>
+    <AppDomain>https://lawtech.simidoc.vn</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Document"/>
+  </Hosts>
+  <Requirements>
+    <Sets DefaultMinVersion="1.1">
+      <Set Name="AddinCommands" MinVersion="1.1" />
+      <Set Name="WordApi" MinVersion="1.1" />
+    </Sets>
+  </Requirements>
+  <DefaultSettings>
+    <SourceLocation DefaultValue="https://lawtechaddin.simidoc.vn" />
+  </DefaultSettings>
+  <Permissions>ReadWriteDocument</Permissions>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Hosts>
+      <Host xsi:type="Document">
+        <DesktopFormFactor>
+          <FunctionFile resid="Lawtech.FunctionFile.Url" />
+          <ExtensionPoint xsi:type="PrimaryCommandSurface">
+            <CustomTab id="Lawtech.Tab">
+              <Group id="Lawtech.Tab.LawtechToolGroup">
+                <Label resid="Lawtech.Tab.LawtechToolGroup" />
+                <Icon>
+                  <bt:Image size="16" resid="Lawtech.TaskpaneButton.Icon16" />
+                  <bt:Image size="32" resid="Lawtech.TaskpaneButton.Icon32" />
+                  <bt:Image size="80" resid="Lawtech.TaskpaneButton.Icon80" />
+                </Icon>
+
+                <Control xsi:type="Button" id="Lawtech.SearchTaskpane">
+                  <Label resid="Lawtech.SearchTaskpane.Label" />
+                  <Supertip>
+                    <Title resid="Lawtech.SearchTaskpane.Label" />
+                    <Description resid="Lawtech.SearchTaskpane.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Lawtech.SearchTaskpane.Icon16" />
+                    <bt:Image size="32" resid="Lawtech.SearchTaskpane.Icon32" />
+                    <bt:Image size="80" resid="Lawtech.SearchTaskpane.Icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId2</TaskpaneId>
+                    <SourceLocation resid="Lawtech.SearchTaskpane.Url" />
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="Lawtech.SpellTaskpane">
+                  <Label resid="Lawtech.SpellTaskpane.Label" />
+                  <Supertip>
+                    <Title resid="Lawtech.SpellTaskpane.Label" />
+                    <Description resid="Lawtech.SpellTaskpane.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Lawtech.SpellTaskpane.Icon16" />
+                    <bt:Image size="32" resid="Lawtech.SpellTaskpane.Icon32" />
+                    <bt:Image size="80" resid="Lawtech.SpellTaskpane.Icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId2</TaskpaneId>
+                    <SourceLocation resid="Lawtech.SpellTaskpane.Url" />
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="Lawtech.MentionTaskpane">
+                  <Label resid="Lawtech.MentionTaskpane.Label" />
+                  <Supertip>
+                    <Title resid="Lawtech.MentionTaskpane.Label" />
+                    <Description resid="Lawtech.MentionTaskpane.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Lawtech.MentionTaskpane.Icon16" />
+                    <bt:Image size="32" resid="Lawtech.MentionTaskpane.Icon32" />
+                    <bt:Image size="80" resid="Lawtech.MentionTaskpane.Icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId2</TaskpaneId>
+                    <SourceLocation resid="Lawtech.MentionTaskpane.Url" />
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="Lawtech.TemplateTaskpane">
+                  <Label resid="Lawtech.TemplateTaskpane.Label" />
+                  <Supertip>
+                    <Title resid="Lawtech.TemplateTaskpane.Label" />
+                    <Description resid="Lawtech.TemplateTaskpane.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Lawtech.TemplateTaskpane.Icon16" />
+                    <bt:Image size="32" resid="Lawtech.TemplateTaskpane.Icon32" />
+                    <bt:Image size="80" resid="Lawtech.TemplateTaskpane.Icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId2</TaskpaneId>
+                    <SourceLocation resid="Lawtech.TemplateTaskpane.Url" />
+                  </Action>
+                </Control>
+              </Group>
+
+
+<!--              <Group id="Lawtech.Tab.Group2">-->
+<!--                <Label resid="Lawtech.Tab.GroupLabel2" />-->
+<!--                <Icon>-->
+<!--                  <bt:Image size="16" resid="Lawtech.TaskpaneButton.Icon16" />-->
+<!--                  <bt:Image size="32" resid="Lawtech.TaskpaneButton.Icon32" />-->
+<!--                  <bt:Image size="80" resid="Lawtech.TaskpaneButton.Icon80" />-->
+<!--                </Icon>-->
+<!--                <Control xsi:type="Button" id="Lawtech.HelpButton2">-->
+<!--                  <Label resid="Lawtech.TemplateTaskpane.Label" />-->
+<!--                  <Supertip>-->
+<!--                    <Title resid="Lawtech.TemplateTaskpane.Label" />-->
+<!--                    <Description resid="Lawtech.TemplateTaskpane.Tooltip" />-->
+<!--                  </Supertip>-->
+<!--                  <Icon>-->
+<!--                    <bt:Image size="16" resid="Lawtech.TemplateTaskpane.Icon16" />-->
+<!--                    <bt:Image size="32" resid="Lawtech.TemplateTaskpane.Icon32" />-->
+<!--                    <bt:Image size="80" resid="Lawtech.TemplateTaskpane.Icon80" />-->
+<!--                  </Icon>-->
+<!--                  <Action xsi:type="ExecuteFunction">-->
+<!--                    <FunctionName>showTemplateDialog</FunctionName>-->
+<!--                  </Action>-->
+<!--                </Control>-->
+<!--              </Group>-->
+
+              <Group id="Lawtech.Tab.Group3">
+                <Label resid="Lawtech.Tab.GroupLabel3" />
+                <Icon>
+                  <bt:Image size="16" resid="Lawtech.TaskpaneButton.Icon16" />
+                  <bt:Image size="32" resid="Lawtech.TaskpaneButton.Icon32" />
+                  <bt:Image size="80" resid="Lawtech.TaskpaneButton.Icon80" />
+                </Icon>
+
+                <Control xsi:type="Button" id="Lawtech.TutorialButton">
+                  <Label resid="Lawtech.TutorialButton.Label" />
+                  <Supertip>
+                    <Title resid="Lawtech.TutorialButton.Label" />
+                    <Description resid="Lawtech.TutorialButton.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Lawtech.TutorialButton.Icon16" />
+                    <bt:Image size="32" resid="Lawtech.TutorialButton.Icon32" />
+                    <bt:Image size="80" resid="Lawtech.TutorialButton.Icon80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showTutorialDialog</FunctionName>
+                  </Action>
+                </Control>
+
+                <Control xsi:type="Button" id="Lawtech.HelpButton">
+                  <Label resid="Lawtech.HelpButton.Label" />
+                  <Supertip>
+                    <Title resid="Lawtech.HelpButton.Label" />
+                    <Description resid="Lawtech.HelpButton.Tooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Lawtech.HelpButton.Icon16" />
+                    <bt:Image size="32" resid="Lawtech.HelpButton.Icon32" />
+                    <bt:Image size="80" resid="Lawtech.HelpButton.Icon80" />
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>showHelpDialog</FunctionName>
+                  </Action>
+                </Control>
+              </Group>
+
+
+              <Label resid="Lawtech.Tab.TabLabel" />
+            </CustomTab>
+          </ExtensionPoint>
+
+        <ExtensionPoint xsi:type="ContextMenu">
+          <OfficeMenu id="ContextMenuText">
+            <Control xsi:type="Menu" id="LawtechContextMenu">
+              <Label resid="ContextMenuLabel" />
+              <Supertip>
+                <Title resid="ContextMenuTitle" />
+                <Description resid="ContextMenuTooltip" />
+              </Supertip>
+              <Icon>
+                <bt:Image size="16" resid="Lawtech.SearchTaskpane.Icon16" />
+                <bt:Image size="32" resid="Lawtech.SearchTaskpane.Icon32" />
+                <bt:Image size="80" resid="Lawtech.SearchTaskpane.Icon80" />
+              </Icon>
+              <Items>
+                <Item id="showContextMenu">
+                  <Label resid="ContextMenuItemLabel"/>
+                  <Supertip>
+                    <Title resid="ContextMenuTitle" />
+                    <Description resid="ContextMenuTooltip" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Lawtech.SearchTaskpane.Icon16" />
+                    <bt:Image size="32" resid="Lawtech.SearchTaskpane.Icon32" />
+                    <bt:Image size="80" resid="Lawtech.SearchTaskpane.Icon80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <TaskpaneId>ButtonId2</TaskpaneId>
+                    <SourceLocation resid="Lawtech.SearchTaskpane.List.Url" />
+                  </Action>
+                </Item>
+              </Items>
+            </Control>
+          </OfficeMenu>
+         </ExtensionPoint>
+
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Lawtech.TemplateTaskpane.Icon16" DefaultValue="https://lawtechaddin.simidoc.vn/assets/template-16.png" />
+        <bt:Image id="Lawtech.TemplateTaskpane.Icon32" DefaultValue="https://lawtechaddin.simidoc.vn/assets/template-32.png" />
+        <bt:Image id="Lawtech.TemplateTaskpane.Icon80" DefaultValue="https://lawtechaddin.simidoc.vn/assets/template-80.png" />
+        <bt:Image id="Lawtech.MentionTaskpane.Icon16" DefaultValue="https://lawtechaddin.simidoc.vn/assets/mention-16.png" />
+        <bt:Image id="Lawtech.MentionTaskpane.Icon32" DefaultValue="https://lawtechaddin.simidoc.vn/assets/mention-32.png" />
+        <bt:Image id="Lawtech.MentionTaskpane.Icon80" DefaultValue="https://lawtechaddin.simidoc.vn/assets/mention-80.png" />
+        <bt:Image id="Lawtech.SearchTaskpane.Icon16" DefaultValue="https://lawtechaddin.simidoc.vn/assets/search-16.png" />
+        <bt:Image id="Lawtech.SearchTaskpane.Icon32" DefaultValue="https://lawtechaddin.simidoc.vn/assets/search-32.png" />
+        <bt:Image id="Lawtech.SearchTaskpane.Icon80" DefaultValue="https://lawtechaddin.simidoc.vn/assets/search-80.png" />
+        <bt:Image id="Lawtech.SpellTaskpane.Icon16" DefaultValue="https://lawtechaddin.simidoc.vn/assets/spell-16.png" />
+        <bt:Image id="Lawtech.SpellTaskpane.Icon32" DefaultValue="https://lawtechaddin.simidoc.vn/assets/spell-32.png" />
+        <bt:Image id="Lawtech.SpellTaskpane.Icon80" DefaultValue="https://lawtechaddin.simidoc.vn/assets/spell-80.png" />
+        <bt:Image id="Lawtech.TaskpaneButton.Icon16" DefaultValue="https://lawtechaddin.simidoc.vn/assets/icon-16.png" />
+        <bt:Image id="Lawtech.TaskpaneButton.Icon32" DefaultValue="https://lawtechaddin.simidoc.vn/assets/icon-32.png" />
+        <bt:Image id="Lawtech.TaskpaneButton.Icon80" DefaultValue="https://lawtechaddin.simidoc.vn/assets/icon-80.png" />
+        <bt:Image id="Lawtech.TutorialButton.Icon16" DefaultValue="https://lawtechaddin.simidoc.vn/assets/tutorial-16.png" />
+        <bt:Image id="Lawtech.TutorialButton.Icon32" DefaultValue="https://lawtechaddin.simidoc.vn/assets/tutorial-32.png" />
+        <bt:Image id="Lawtech.TutorialButton.Icon80" DefaultValue="https://lawtechaddin.simidoc.vn/assets/tutorial-80.png" />
+        <bt:Image id="Lawtech.HelpButton.Icon16" DefaultValue="https://lawtechaddin.simidoc.vn/assets/help-16.png" />
+        <bt:Image id="Lawtech.HelpButton.Icon32" DefaultValue="https://lawtechaddin.simidoc.vn/assets/help-32.png" />
+        <bt:Image id="Lawtech.HelpButton.Icon80" DefaultValue="https://lawtechaddin.simidoc.vn/assets/help-80.png" />
+
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Lawtech.FunctionFile.Url" DefaultValue="https://lawtechaddin.simidoc.vn/DialogFunction.html" />
+        <bt:Url id="Lawtech.MentionTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/mention/home" />
+        <bt:Url id="Lawtech.TemplateTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/addin/template/home" />
+        <bt:Url id="Lawtech.SearchTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/search/home" />
+        <bt:Url id="Lawtech.SpellTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/spell/home" />
+         <!--LearnMore URL currently not used -->
+        <bt:Url id="Lawtech.SearchTaskpane.List.Url" DefaultValue="https://lawtech.simidoc.vn/search/list?isSelected=true">
+        </bt:Url>
+
+
+      </bt:Urls>
+      <bt:ShortStrings>
+
+        <bt:String id="Lawtech.TemplateTaskpane.Label" DefaultValue="Template" />
+        <bt:String id="Lawtech.MentionTaskpane.Label" DefaultValue="Mention" />
+        <bt:String id="Lawtech.SearchTaskpane.Label" DefaultValue="Search" />
+        <bt:String id="Lawtech.SpellTaskpane.Label" DefaultValue="Spell" />
+        <bt:String id="Lawtech.TutorialButton.Label" DefaultValue="Tutorial" />
+        <bt:String id="Lawtech.HelpButton.Label" DefaultValue="Help" />
+        <bt:String id="Lawtech.Tab.LawtechToolGroup" DefaultValue="Lawtech Tools" />
+        <bt:String id="Lawtech.Tab.GroupLabel2" DefaultValue="Template Creator" />
+        <bt:String id="Lawtech.Tab.GroupLabel3" DefaultValue="About Lawtech" />
+         <bt:String id="Lawtech.Tab.TabLabel" DefaultValue="Lawtech" />
+         <bt:String id="Lawtech.GetStarted.Title" DefaultValue="Simple add-in was succesfully loaded">
+          <bt:Override Locale="ja-jp" Value="JA-JP Get Started Title" />
+        </bt:String>
+
+        <bt:String id="ContextMenuTitle" DefaultValue="Tìm kiếm">
+        </bt:String>
+        <bt:String id="ContextMenuLabel" DefaultValue="Lawtech tool">
+        </bt:String>
+        <bt:String id="ContextMenuItemLabel" DefaultValue="Tìm kiếm văn bản pháp luật">
+        </bt:String>
+
+      </bt:ShortStrings>
+      <bt:LongStrings>
+
+        <bt:String id="Lawtech.TemplateTaskpane.Tooltip" DefaultValue="Nhấn để mở Template Taskpane." />
+        <bt:String id="Lawtech.MentionTaskpane.Tooltip" DefaultValue="Nhấn để mở Mention Taskpane." />
+        <bt:String id="Lawtech.SearchTaskpane.Tooltip" DefaultValue="Nhấn để mở Search Taskpane." />
+        <bt:String id="Lawtech.SpellTaskpane.Tooltip" DefaultValue="Nhấn để mở Spell Taskpane." />
+        <bt:String id="Lawtech.TutorialButton.Tooltip" DefaultValue="Xem thêm hướng dẫn tại đây." />
+        <bt:String id="Lawtech.HelpButton.Tooltip" DefaultValue="Trợ giúp." />
+
+
+        <bt:String id="ContextMenuTooltip" DefaultValue="Tìm kiếm văn bản pháp luật">
+        </bt:String>
+
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
