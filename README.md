@@ -1,0 +1,1 @@
+# Sspell_word_add_in
