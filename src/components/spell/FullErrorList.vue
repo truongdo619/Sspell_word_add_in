@@ -30,8 +30,8 @@ export default {
             return this.$store.state.spell.errorItems
         },
         loading(){
-          return true
-            // return this.$store.state.spell.loadErrorItems
+          // return true
+            return this.$store.state.spell.loadErrorItems
         }
     },
     methods: {

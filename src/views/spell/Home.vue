@@ -8,7 +8,7 @@
 
         <div class="logo_pane">
             <img :src="logo">
-            <p>Chào mừng đến ViSpell</p>
+            <p>Chào mừng đến Sspell</p>
         </div>
 
         <div class="content_pane">
@@ -31,9 +31,15 @@
                     <el-button type="primary">Kiểm tra đoạn văn</el-button>
                 </router-link>
             </div>
-            <div>
+            <div style="margin-bottom:10px">
               <router-link :to="{ name: 'FullSpell', query: { 'field': settings.field, 'speed': settings.speed }}">
                     <el-button type="danger">Kiểm tra văn bản</el-button>
+                </router-link>
+            </div>
+
+            <div>
+              <router-link :to="{ name: 'DictionarySpell'}">
+                    <el-button>Từ điển của tôi</el-button>
                 </router-link>
             </div>
         </div>

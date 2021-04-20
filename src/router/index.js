@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import CurSpell from '../views/spell/CurSpell'
 import FullSpell from '../views/spell/FullSpell'
 import HomeSpell from '../views/spell/Home'
+import DictionarySpell from '../views/spell/Dictionary'
 import HomeSearch from '../views/search/Home'
 import SearchDetail from '../views/search/Detail'
 import SearchList from '../views/search/List'
@@ -30,6 +31,11 @@ export default new Router({
             path: '/spell/fulllist',
             name: 'FullSpell',
             component: FullSpell
+        },
+        {
+            path: '/spell/dictionary',
+            name: 'DictionarySpell',
+            component: DictionarySpell
         },
         {
             path: '/search/home',

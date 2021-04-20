@@ -31,7 +31,7 @@ export default {
             this.$store.dispatch("spell/load_error_items_cur", { "field" : this.field, "speed" : this.speed})
           }
           else {
-            this.$store.dispatch("spell/update_reset_full_list", true)
+            this.$store.dispatch("spell/load_error_items_full", { "field" : this.field, "speed" : this.speed})
           }
         }
     },
@@ -40,13 +40,11 @@ export default {
           return this.$store.state.spell.resetFullList
         }
     },
-    watch:{
-      reset_full_list: function (newValue, oldValue) {
-          if (oldValue === true){
-            this.$store.dispatch("spell/load_error_items_full", { "field" : this.field, "speed" : this.speed})
-          }
-      }
-    }
+    // watch:{
+    //   reset_full_list: function (newValue, oldValue) {
+    //       console.log("12iii23 - " + oldValue)
+    //   }
+    // }
 }
 </script>
 

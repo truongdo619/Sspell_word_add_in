@@ -249,7 +249,7 @@
         <bt:Url id="Lawtech.MentionTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/mention/home" />
         <bt:Url id="Lawtech.TemplateTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/addin/template/home" />
         <bt:Url id="Lawtech.SearchTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/search/home" />
-        <bt:Url id="Lawtech.SpellTaskpane.Url" DefaultValue="https://lawtech.simidoc.vn/spell/home" />
+        <bt:Url id="Lawtech.SpellTaskpane.Url" DefaultValue="https://localhost:3000/spell/home" />
          <!--LearnMore URL currently not used -->
         <bt:Url id="Lawtech.SearchTaskpane.List.Url" DefaultValue="https://lawtech.simidoc.vn/search/list?isSelected=true">
         </bt:Url>

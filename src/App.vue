@@ -16,7 +16,7 @@ export default {
   computed: {
     isOfficeInitialized(){
       // return true
-      return this.$store.state.spell.isOfficeInitialized
+      return this.$store.state.spell.isOfficeInitialized;
     }
   }
 }

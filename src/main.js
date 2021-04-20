@@ -15,6 +15,7 @@ new Vue({
 }).$mount('#app')
 
 
+
 window.Office.initialize = () => {
-  store.dispatch("spell/set_state_office", true)
+  store.dispatch("spell/set_state_office", true);
 };
